@@ -93,3 +93,17 @@ The project includes:
 - CSV files were imported manually into Oracle XE tables.
 - Hidden carriage return characters in PAYMENT_STATUS values were cleaned using the REPLACE function.
 - All SQL queries were tested successfully on the imported dataset.
+
+# Docker Compose Setup
+
+This project also includes a docker-compose.yml file for running Oracle XE more easily.
+
+To start the Oracle XE container with Docker Compose:
+
+docker compose up -d
+
+The compose container uses port 1522 on the host machine:
+
+localhost:1522
+
+This port was used to avoid conflict with the manually created Oracle XE container on port 1521.
