@@ -100,10 +100,14 @@ This project also includes a docker-compose.yml file for running Oracle XE more 
 
 To start the Oracle XE container with Docker Compose:
 
+```bash
 docker compose up -d
+```
 
 The compose container uses port 1522 on the host machine:
 
+```text
 localhost:1522
+```
 
 This port was used to avoid conflict with the manually created Oracle XE container on port 1521.
